@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- title na tab do browser -->
+    <title>Ipca Summer Fest</title>
+
+    <!-- icon na tab do browser -->
+    <link rel="icon" href="media/icons/logo.svg">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <a class="logo" href="#header">
+            <img src="media/img/logo.png" alt="">
+        </a>
+
+        <div class="nav-bar">
+            <a href="#header">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#form">Bilhetes</a>
+            <a href="#">Horário</a>
+            <a href="#">Cartaz</a>
+        </div>
+    </nav>
+    <!-- NavBar-Fim -->
+
+    <!-- Header -->
+    <header id="header">
+        <!-- bg-img -->
+        <img src="media/img/header_cut.jpg" alt="">
+
+        <!-- Modelo -->
+        <div class="modelBox">
+            <img src="media/img/model.png" alt="" id="model">
+        </div>
+
+        <!-- Quadrado Amarelo -->
+        <div class="yellow-Square"></div>
+
+        <!-- Lista de Bandas -->
+        <ul class="bands">
+            <li>.Ornatos Violeta</li>
+            <li>.MataRatos</li>
+            <li>.Mão Morta</li>
+            <li>.The Gift</li>
+        </ul>
+
+        <!-- Tic Tac Toe -->
+        <div class="tic-tac-toe">
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+
+            <div class="circle-Holder">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <!-- Festival -->
+        <div class="festival-title">
+            Ipca<br>
+            Summer<br>
+            Fest<br>
+        </div>
+
+        <!-- Scroll Indication -->
+
+        <!-- Scroll Text -->
+        <div class="scroll">
+            <a href="#form" id="scroll">Scroll</a>
+
+            <!-- Scroll Arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="12.064" height="10.096" viewBox="0 0 12.064 10.096">
+                <path id="arrow" data-name="arrow"
+                    d="M954.078,1051.729l5.916,5.5,6.079-5.323L966,1056.5l-6.079,5.323-5.916-5.5Z"
+                    transform="translate(-954.009 -1051.729)" fill="#7e9bf8" />
+            </svg>
+        </div>
+    </header>
+    <!-- Header-Fim -->
+
+    <!-- Form -->
+    <form id="form" method="GET">
+        <!-- meter background com overlay de fundo -->
+        <div class="bg-img">
+            <!-- imagem -->
+            <img src="media/img/bgImg.png" alt="">
+          </div>
+
+        <div class="container">
+            <!-- required camps -->
+            <p>* Estes campos são obrigatórios</p>
+
+            <!-- first section -->
+            <div class="info-box1">
+                <input id="textbox" class="name" placeholder="* Insira o seu nome" name="name" required>
+                <input id="textbox" class="morada" placeholder="* Insira a sua morada" name="morada" required>
+            </div>
+
+            <!-- second section -->
+            <div class="info-box2">
+                <select id="textbox" class="gender" name="gender" required>
+                    <option id="placeholder" selected disabled hidden>* Escolha o seu género 🠗</option>
+                    <!-- placeholder do select -->
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <select id="textbox" class="ticket" name="ticket" required>
+                    <option id="placeholder" selected disabled hidden>* Escolha o bilhete 🠗</option>
+                    <!-- placeholder do select -->
+                    <option value="díario">Díario - 5€</option>
+                    <option value="weekend">Dois Dias - 7€</option>
+                    <option value="premium">Premium - 10€</option>
+                </select>
+            </div>
+
+            <!-- third section -->
+            <div class="info-box3">
+                <input id="textbox" class="mail" type="email" placeholder="* Insira o seu email" name="email" required>
+                <input id="textbox" class="phone" type="number" placeholder="* Insira o seu nº telemóvel"
+                    name="telemóvel" min="111111111" max="999999999" required>
+            </div>
+
+            <!-- card section -->
+            <div class="gallery">
+                <!-- card 1 -->
+                <div class="card">
+                    <!-- card img -->
+                    <div class="card-img">
+                        <img src="media/img/meat.png" alt="">
+                    </div>
+
+                    <!-- card subtitle -->
+                    <div class="card-subtitle">
+                        <p>Refeições</p>
+                    </div>
+
+                    <!-- card title -->
+                    <div class="card-title">
+                        <p>Prato principal</p>
+                    </div>
+
+                    <!-- radioButton -->
+                    <div class="card-choice">
+                        <input type="radio" name="refeiçao" value="meat" id="carne" class="input-hidden">
+                        <label for="carne">
+                            <span class="checkbox"></span>
+                            Carne
+                        </label>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <!-- card img -->
+                    <div class="card-img">
+                        <img src="media/img/fish.png" alt="">
+                    </div>
+
+                    <!-- card subtitle -->
+                    <div class="card-subtitle">
+                        <p>Refeições</p>
+                    </div>
+
+                    <!-- card title -->
+                    <div class="card-title">
+                        <p>Prato principal</p>
+                    </div>
+
+                    <!-- radioButton -->
+                    <div class="card-choice">
+                        <input type="radio" name="refeiçao" value="fish" id="peixe" class="input-hidden">
+                        <label for="peixe">
+                            <span class="checkbox"></span>
+                            Peixe
+                        </label>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <!-- card img -->
+                    <div class="card-img">
+                        <img src="media/img/grass.png" alt="">
+                    </div>
+
+                    <!-- card subtitle -->
+                    <div class="card-subtitle">
+                        <p>Refeições</p>
+                    </div>
+
+                    <!-- card title -->
+                    <div class="card-title">
+                        <p>Prato principal</p>
+                    </div>
+
+                    <!-- radioButton -->
+                    <div class="card-choice">
+                        <input type="radio" name="refeiçao" value="vegan" id="vegan" class="input-hidden">
+                        <label for="vegan">
+                            <span class="checkbox"></span>
+                            Vegan
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- buttons section -->
+            <div class="buttons">
+                <input class="submit" type="submit" value="Submeter">
+                <input class="clear" type="reset" value="Limpar">
+            </div>
+
+            <!-- info section -->
+            <p class="info">
+                Your data will not be used outside of IpcaSummerFest.com. By buying the ticket you agree that your statistics may be used anonymously inside IpcaSummerFest.com.
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
